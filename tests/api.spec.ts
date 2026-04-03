@@ -8,6 +8,7 @@ test("GET /products", async ({ request }) => {
   const body = await response.json();
   expect(body.data.length).toBe(9);
   expect(body.total).toBe(50);
+  
 });
 
 test("POST /users/login", async ({ request }) => {
