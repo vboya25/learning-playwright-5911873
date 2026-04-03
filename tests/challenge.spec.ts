@@ -14,6 +14,7 @@ test.describe("Checkout challenge", async () => {
     await page.getByTestId("nav-cart").click();
     await page.getByTestId("proceed-1").click();
     await page.getByTestId("proceed-2").click();
+    await 
     await expect(
       page.locator(".step-indicator").filter({ hasText: "2" })
     ).toHaveCSS("background-color", "rgb(51, 153, 51)");
